@@ -1,0 +1,592 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+.body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* universal text color */
+
+/* for text selection background*/
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: rgba(247,70,90,255);
+}
+  
+::selection {
+    color: white;
+    background: rgba(247,70,90,255);
+}
+
+
+.un-text-color{
+    color: #f7465b;
+}
+
+/* red line under headings and text */
+.separator{
+    background: #f7465b;
+    position: relative;
+    width: 70px;
+    height: 3px;
+    margin: 10px 0;
+}
+.centered{
+    margin: 10px auto;
+}
+
+/* Header Styling */
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)), url("../images/header-image-3.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+
+}
+
+.header-content{
+    height: 80vh;
+}
+header .header-btns .btn-1{
+    background: rgba(247,70,90,255);
+    border: 1px solid rgba(247,70,90,255);
+    padding: 0.5rem 2rem;
+    margin: 1rem;
+    color: white;
+    transition: 0.3s;
+
+}
+header .header-btns .btn-1:hover{
+    background: white;
+    border: 1px solid white;
+    color: rgba(247,70,90,255);
+
+}
+header .header-btns .btn-2{
+    background: none;
+    border: 1px solid rgba(247,70,90,255);
+    padding: 0.5rem 2rem;
+    margin: 1rem;
+    color: white;
+    transition: 0.3s;
+
+}
+header .header-btns .btn-2:hover{
+    background: rgba(247,70,90,255);
+    color: white;
+}
+.dot{
+    background: #f7465b;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 4px 20px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.go-down {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 40px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    text-align: center;
+    padding-top: 6px;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    -webkit-transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+    transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+}
+
+
+
+.blink {
+    position: absolute;
+    left: 10px;
+    color: white;
+    animation: blink 1s linear infinite;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    transform: rotate(-45deg);
+}
+  
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+/* Header Styling End*/
+
+/* Navbar Styling */
+.navbar{
+    position: sticky;
+    top: -100px;
+    z-index: 9;
+    background: rgba(247,70,90,255);
+}
+.navbar .nav-link{
+    color: white;
+    border-bottom: 2px solid white;
+    margin: 0 10px;
+}
+
+.fixed{
+    background: rgba(247,70,90,255);
+    position: sticky;
+    top: -10px;
+    transition: 2s;
+}
+/* Navbar Styling End*/
+
+/* About Styling */
+
+.about-section-avatar img{
+    border-radius: 50%;
+    /* max-width: 300px; */
+    border: 5px solid #262323a0;
+    background: #fff;
+    padding: 5px;
+    margin: 2rem auto;
+    box-shadow: 0px 0px 25px 0px rgb(0 0 0 / 30%);
+}
+
+.about-section-tabs-menu .nav-tabs .nav-link{
+    color: rgba(247,70,90,255);
+}
+
+.about-pesonal-info ul li{
+    list-style: none;
+    line-height: 2rem;
+
+}
+/* About Styling End*/
+/* Divider 1 Styling */
+.divider-1{
+    background-color: rgba(247,70,90,255);
+    padding: 4rem;
+}
+.divider-1 .divider-1-btns button{
+    background: none;
+    border: 1px solid white;
+    padding: 0.5rem 2rem;
+    margin: 1rem;
+    color: white;
+    transition: 0.3s;
+}
+.divider-1 .divider-1-btns .btn-1:hover{
+    background: white;
+    color: rgba(247,70,90,255);
+}
+.divider-1 .divider-1-btns .btn-2:hover{
+    background: black;
+    border: 1px solid black;
+}
+/* Divider 1 Styling End*/
+
+/* How things are done section */
+.how-things-are-done .section .picture img{
+    width: 400px;
+    height: 300px;
+}
+/* How things are done section End */
+
+/* Fun Facts section */
+.fun-facts{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)), url("../images/fun-facts-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    /* height: 70vh; */
+    color: white;
+}
+
+/* Fun Facts section END */
+
+/* My services section styling */
+
+
+.my-services .services .service .logo h1 i{
+    border-radius: 50%;
+    background-color: rgb(242, 242, 242);
+    padding: 1.5rem;
+    transition: 0.7s;
+}
+.my-services .services .service{
+    transition: 0.7s;
+}
+.my-services .services .service:hover .logo h1 i{
+    background-color: rgba(247,70,90,255);
+    color: white;
+}
+.my-services .services .service:hover{
+    transform: scale(1.1);
+}
+
+/* My services section styling END */
+
+/* Divider 2 section styling */
+.divider-2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)), url("../images/divider-2.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: 50vh;
+
+}
+
+.divider-2 button{
+    background: none;
+    border: 1px solid rgba(247,70,90,255);
+    padding: 0.5rem 2rem;
+    margin: 1rem;
+    color:white;
+    transition: 0.5s;
+}
+.divider-2 button:hover{
+    background: rgba(247,70,90,255);
+}
+/* Divider 2 section styling END */
+
+/* Experience Section Styling */
+.pt-100{
+    padding-top:100px;
+}
+.pb-100{
+    padding-bottom:100px;
+}
+.section-title {
+  margin-bottom: 60px;
+}
+.section-title p {
+	color: #777;
+	font-size: 16px;
+}
+.section-title h4 {
+	text-transform: capitalize;
+	font-size: 40px;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.section-title h4:before {
+	position: absolute;
+	content: "";
+	width: 60px;
+	height: 2px;
+	background-color: #ff3636;
+	bottom: 0;
+	left: 50%;
+	margin-left: -30px;
+}
+.section-title h4:after {
+	position: absolute;
+	background-color: #ff3636;
+	content: "";
+	width: 10px;
+	height: 10px;
+	bottom: -4px;
+	left: 50%;
+	margin-left: -5px;
+	border-radius: 50%;
+}
+ul.timeline-list {
+	position: relative;
+	margin: 0;
+	padding: 0
+}
+ul.timeline-list:before {
+	position: absolute;
+	content: "";
+	width: 2px;
+	height: 100%;
+	background-color: #ff3636;
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+ul.timeline-list li {
+	position: relative;
+	clear: both;
+	display: table;
+}
+.timeline_content {
+	border: 2px solid #ff3636;
+	background-color:#fff
+}
+ul.timeline-list li .timeline_content {
+	width: 45%;
+	color: #333;
+	padding: 30px;
+	float: left;
+	text-align: right;
+}
+ul.timeline-list li:nth-child(2n) .timeline_content {
+	float: right;
+	text-align: left;
+}
+.timeline_content h4 {
+	font-size: 22px;
+	font-weight: 600;
+	margin: 10px 0;
+}
+ul.timeline-list li:before {
+	position: absolute;
+	content: "";
+	width: 25px;
+	height: 25px;
+	background-color: #ff3636;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+.timeline_content span {
+	font-size: 18px;
+	font-weight: 500;
+	font-family: poppins;
+	color: #ff3636;
+}
+
+/* Experience Section Styling END*/
+
+/* Skills Section Styling */
+.skills{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)), url("../images/skills-3.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.progress{
+    width: 8rem;
+    height: 8rem;
+    line-height: 8rem;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+.progress:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /* border: 2px solid #fff; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress > span{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.progress .progress-left{
+    left: 0;
+}
+.progress .progress-bar{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 10px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+.progress .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.progress .progress-right{
+    right: 0;
+}
+.progress .progress-right .progress-bar{
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value{
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    /* border: 2px solid #ebebeb; */
+    font-size: 28px;
+    line-height: 125px;
+    text-align: center;
+    position: absolute;
+    /* top: 0%; */
+    left: 7.5%;
+}
+.progress-bar{
+    border-color: rgba(247,70,90,255);
+}
+.progress.html-css .progress-left .progress-bar{
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress.java-script .progress-left .progress-bar{
+    animation: loading-3 1s linear forwards 1.8s;
+}
+.progress.mern .progress-left .progress-bar{
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+.progress.wordpress .progress-left .progress-bar{
+    animation: loading-5 1.2s linear forwards 1.8s;
+}
+.progress.java .progress-left .progress-bar{
+    animation: loading-5 1.2s linear forwards 1.8s;
+}
+.progress.c-sharp .progress-left .progress-bar{
+    animation: loading-6 1.2s linear forwards 1.8s;
+}
+/* for right bar half circle */
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+/* for left bar 90% */
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+/* for left bar 60% */
+@keyframes loading-3{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(35deg);
+        transform: rotate(35deg);
+    }
+}
+/* for left bar 65% */
+@keyframes loading-4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(65deg);
+        transform: rotate(65deg);
+    }
+}
+/* for left bar 75% */
+@keyframes loading-5{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+/* for left bar 50% */
+@keyframes loading-6{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+@media only screen and (max-width: 990px){
+    .progress{ 
+        margin-bottom: 20px; 
+    }
+}
+/* Skills Section Styling END*/
+
+/* contact section */
+.form-control{
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid rgba(247,70,90,255) !important;
+}
+.form-control:active, .form-control:focus{
+    border-color: black !important;
+}
+.form-control:hover, .form-control:active, .form-control:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; 
+}
+
+.contact-details p a{
+    color: black;
+  
+}
+/* contact section END */
+
+/* Scroll to top button */
+#myBtn{
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+/* Scroll to top button END*/
+
+@media only screen and (max-width: 992px) {
+    .how-things-are-done .section .picture img{
+        width: 350px;
+        height: 250px;
+    }
+    
+}

@@ -1,0 +1,66 @@
+body{
+    /* background-color: #e2a876; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.converter{
+   width: 50%;
+    background-color: rgb(52,120,129);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin: 2rem;   
+}
+.converter-card{
+
+    background-color: #fff;
+    padding: 1rem;
+    border: 3px solid rgb(52,120,129);
+ 
+
+}
+.header{
+    color: rgb(52,120,129);
+    font-weight: 100;
+    padding: 1rem;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+
+}
+.bi-thermometer-sun{
+    color: rgb(255, 146, 5);
+
+}
+.heading{
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgb(52,120,129);
+}
+
+#temperature{
+    font-size: 3rem;
+    font-weight: 300;
+}
+input{
+    border: 2px solid rgb(69, 73, 73);
+    border-radius: 5px;
+}
+select{
+    border: 2px solid rgb(69, 73, 73);
+    border-radius: 5px;
+    padding: 0.15rem 1rem;
+}
+
+.btn{
+    background-color: rgb(52,120,129);
+    border: none;
+}
+
+.error{
+    border: 1px solid red;
+}
+.errorMsg{
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 5px;
+}
